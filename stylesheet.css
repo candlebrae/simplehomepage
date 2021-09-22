@@ -1,0 +1,117 @@
+/* Copyright Owls Collective, 2021
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
+
+Why the license for a tiny bit of code? Because we want to guarentee it stays free for all to use, modify, and redistribute. It's not a lot of code, nor is it particularly complicated, but copyright laws still apply (surprisingly) and including a license is needed to guarentee these freedoms.*/
+
+ @import "colors.cfg";
+
+ @viewport {
+	width: device-width;
+  zoom: 1.0;
+ } /* This bit makes it so that the page scales with your browser's window. Neat and necessary! */
+
+ /* Applies to the entire page. */
+ body {
+	 background-color: var(--BGColor);
+	 color: var(--textColor);
+	 font-family: var(--font);
+ }
+
+.red {
+	color: var(--red);
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+}
+.orange {
+	color: var(--orange);
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+}
+.yellow {
+	color: var(--yellow);
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+}
+.green {
+	color: var(--green);
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+}
+.blue {
+	color: var(--blue);
+	text-decoration: none;
+	padding: 5px 0px 5px 0px;
+}
+a:hover p {
+	color: var(--textColor);
+}
+
+ /* Sets up grid formatting- don't change if you aren't at least a little bit familiar with grid format. */
+ .gridcontainer {
+ 		display: grid;
+ 		grid-template-columns: 25% 25% 25% 25%;
+ 		grid-template-rows: auto 30px auto auto auto auto;
+ 		grid-column-gap: 0px;
+ 		grid-row-gap: 0px;
+ 		margin-left: 15px;
+ 		margin-right: 15px;
+ }
+
+ /* Searchbar styling */
+ input {
+ 	all: unset;
+ 	background-color: var(--darkerBG);
+ 	padding: 18px 16px;
+	border: 1px solid var(--lighterBG);
+ }
+ #query {
+ 	width: 85%;
+ 	height: 20px;
+	border-radius: 10px;
+} /* Yes, these two do need to be separate. It breaks otherwise, sorry. */
+.query {
+	grid-row: 1;
+	grid-column: 1 / 5;
+	font-size: 20px;
+	margin-top: 15%;
+ }
+
+.firstColumn {
+ 	grid-row: 3 / 5;
+	grid-column: 1;
+	background-color: var(--lighterBG);
+	border-radius: 40px 0px 0px 15px;
+	border-style: none solid none none;
+	border-color: var(--darkerBG);
+	margin-left: 2%;
+	padding: 20px, 0px, 30px, 0px;
+}
+
+.secondColumn {
+ 	grid-row: 3 / 5;
+	grid-column: 2;
+	background-color: var(--lighterBG);
+	border-style: none solid none none;
+	border-color: var(--darkerBG);
+	padding: 20px, 0px, 30px, 0px;
+}
+
+.thirdColumn {
+ 	grid-row: 3 / 5;
+	grid-column: 3;
+	background-color: var(--lighterBG);
+	border-style: none solid none none;
+	border-color: var(--darkerBG);
+	padding: 20px, 0px, 30px, 0px;
+}
+
+.fourthColumn {
+ 	grid-row: 3 / 5;
+	grid-column: 4;
+	background-color: var(--lighterBG);
+	border-radius: 0px 40px 15px 0px;
+	border-style: none solid none none;
+	border-color: var(--darkerBG);
+	margin-right: 2%;
+	padding: 20px, 0px, 30px, 0px;
+}
