@@ -7,6 +7,6 @@ This is a simple and functional homepage, designed to be easily changed between 
 
 **Defaults (all customizable in colors.cfg except for the search engine):**
 
-  - Color scheme: [Gruvbox](https://github.com/morhetz/gruvbox)
+  - Color scheme: [Gruvbox Dark](https://github.com/morhetz/gruvbox)
   - Font: Source Code Pro Medium
   - Search engine: DuckDuckGo
